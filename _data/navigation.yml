@@ -1,0 +1,62 @@
+- title: Start
+  url: "/"
+  side: left
+
+- title: Getting Started
+  url: "/getting-started/"
+  side: left
+
+- title: "Pricing"
+  url: "/pricing/"
+  side: left
+  dropdown:
+    - title: "Pricing Overview"
+      url: "/pricing/overview/"
+    - title: "Start for Free"
+      url: "/pricing/start-for-free"
+
+- title: "Developers"
+  url: "/developers/"
+  side: left
+  dropdown:
+    - title: "Getting Started"
+      url: "/developers/getting-started"
+    - title: "Concepts"
+      url: "/developers/concepts"
+
+- title: Resources
+  url: "/resources/"
+  side: left
+  dropdown:
+    - title: "Roadmap"
+      url: "/roadmap/"
+
+- title: Support
+  url: "/support/"
+  side: left
+  dropdown:
+    - title: "Blog"
+      url: "/support/blog/"
+    - title: "Case Studies"
+      url: "support/case-studies"
+    - title: "E-Books"
+      url: "support/e-books"
+    - title: "Reports"
+      url: "support/reports"
+    - title: "Videos"
+      url: "support/videos"
+
+- title: "Search"
+  url: "/search/"
+  side: right
+
+- title: "Company"
+  url: "/company/"
+  side: right
+  dropdown:
+    - title: "Careers"
+      url: "/company/careers"
+    - title: "Connect"
+      url: "/company/connect"
+    - title: "About"
+      url: "/company/about"
