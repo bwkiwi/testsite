@@ -174,9 +174,9 @@ $button-disabled-cursor: $cursor-default-value !default;
 
   // We can set $disabled:true to create a disabled transparent button.
   @if $disabled {
-    cursor: $button-disabled-cursor;
-    opacity: $button-disabled-opacity;
-    box-shadow: none;
+    & { cursor: $button-disabled-cursor; }
+    & { opacity: $button-disabled-opacity; }
+    & { box-shadow: none; }
     &:hover,
     &:focus { background-color: $bg; }
   }
