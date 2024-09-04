@@ -77,7 +77,7 @@ $base-line-height: 1.5 !default;
 // $speed - Default: 300ms
 // $ease - Default:ease-out, Options: http://css-tricks.com/almanac/properties/t/transition-timing-function/
 @mixin single-transition($property: all, $speed: 300ms, $ease: ease-out) {
-  transition: $property $speed $ease;
+  & { transition: $property $speed $ease; }
 }
 
 // @mixins
