@@ -158,15 +158,17 @@ $button-disabled-cursor: $cursor-default-value !default;
 
     background-color: $bg;
     border-color: $border-color;
-    &:hover,
-    &:focus { background-color: $bg-hover; }
-
-    // We control the text color for you based on the background color.
-    &{ color: if($bg-lightness > 70%, $button-font-color-alt, $button-font-color); }
+    
+    // Declare color before nested hover and focus
+    color: if($bg-lightness > 70%, $button-font-color-alt, $button-font-color);
 
     &:hover,
     &:focus {
-      & { color: if($bg-hover-lightness > 70%, $button-font-color-alt, $button-font-color); }
+      background-color: $bg-hover;
+      // Use the hover-specific color inside the hover block
+      & {
+        color: if($bg-hover-lightness > 70%, $button-font-color-alt, $button-font-color);
+      }
     }
   }
 
@@ -184,6 +186,7 @@ $button-disabled-cursor: $cursor-default-value !default;
   @else if $radius { @include radius($radius); }
 
 }
+
 
 // @MIXIN
 //
